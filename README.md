@@ -1,8 +1,8 @@
-#M2 DSC - Projet Web Sémantique
+<h3> DSC - Projet Web Sémantique </h3>
 
-Piste: Amélioration de site Web
+<h3>Piste:</h3> Amélioration de site Web
 
-Elaborated by: Nassim TOUATI Marouane GAZOUZI Arslen REMACI
+<h3>Elaborated by:</h3> Nassim TOUATI Marouane GAZOUZI Arslen REMACI
 
 <h3> Description du projet:</h3>
 
