@@ -1,3 +1,8 @@
-Web_Semantic_Project
+#M2 DSC - Projet Web Sémantique
 
-Web_Semantic_Academic_Project this is a readme
+Piste: Amélioration de site Web
+
+Elaborated by: Nassim TOUATI Marouane GAZOUZI Arslen REMACI
+
+<h3> Description du projet:</h3>
+
