@@ -6,15 +6,15 @@
 <div prefix="
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   foaf: http://xmlns.com/foaf/0.1/
-  og: https://websemantic.herokuapp.com/
+  ws: https://websemantic.herokuapp.com/
   xsd: http://www.w3.org/2001/XMLSchema#"
-  typeof="gr:Offering">
-   
+  typeof="ws:Person">
+   <!-- Mobile Specific Metas
    ================================================== -->
-   <meta property="og:url"              content="https://websemantic.herokuapp.com/ " />
-<meta property="og:type"               content="Person" />
-<meta property="og:title"              content="Nassim TOUATI" />
-<meta property="og:description"        content="Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne." />
+   <meta property="ws:url"              content="https://websemantic.herokuapp.com/nassim.html" />
+<meta property="ws:type"               content="Person" />
+<meta property="ws:title"              content="Nassim TOUATI" />
+<meta property="ws:description"        content="Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne." />
    <!-- Mobile Specific Metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -51,13 +51,16 @@
            <section id="nassim">
               <div class="row">
                  <div class="three columns">
-                    <div rel="foaf:depiction">
-                          <img style="float:left; width:100%" src="https://websemantic.herokuapp.com/images/nassim.png"/>
-                        </div>
+                 <div vocab="http://schema.org/" typeof="Person">
+                 <a property="image" href="https://websemantic.herokuapp.com/images/nassim.png">
+                    
+                         
+                        
                  </div>
                  <div class="nine columns main-col">
-                    <meta property="og:title"  content="Nassim TOUATI" />
-                    <meta property="og:description"        content="Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne en France, et en master 2 Réseaux et Systèmes Informatiques à l'université de Turin en Italie (Formation à distance). Mes compétences techniques, issues de mes études universitaires, me permettent de réaliser un nombre varié de missions.
+                
+                    <meta property="name"  content="Nassim TOUATI" />
+                    <meta property="description"        content="Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne en France, et en master 2 Réseaux et Systèmes Informatiques à l'université de Turin en Italie (Formation à distance). Mes compétences techniques, issues de mes études universitaires, me permettent de réaliser un nombre varié de missions.
 Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la recherche d'un stage pour 6 mois, je suis intéressé aux domaines de développement informatiques (Java, Spring Boot, MySQL, WebService, ...) le domaine de Data Mining, le domaine machine learning plus particulièrement les réseaux de neurones.
                     />
                     <div class="row">
@@ -111,7 +114,7 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
          <div class="nine columns main-col">
             <div class="row item">
                <div class="twelve columns">
-                 <div vocab="http://schema.org/"  typeof="CollegeOrUniversity">
+                 <div vocab="http://schema.org/ property="person"  typeof="CollegeOrUniversity">
                    <div>
                       <a property="url" href="https://www.univ-st-etienne.fr"><span property="name">Jean Monnet University Saint-Etienne (France)</span></a>
                     </div>
@@ -165,7 +168,7 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
             </div> <!-- item end -->
             <div class="row item">
                <div class="twelve columns">
-                 <div vocab="http://schema.org/" typeof="Text">
+                 <div vocab="http://schema.org/" typeof="CollegeOrUniversity">
                    <div>
                       <a property="url" href="http://www.amideast.org"><span property="name">AMIDEAST Tunisia (Tunisia)</span></a>
                     </div>
@@ -212,18 +215,18 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
          <div class="nine columns main-col">
             <div class="row item">
                <div class="twelve columns">
-                  <div vocab="http://schema.org/" typeof="Place">
-                      <span property="jobLocation" typeof="Place"><h3>Globe informatique</h3></span>
-                      <span property="title" class="info">User Support Technician</span><span>&bull;</span> <em class="date">January 2012 - Agost 2013</em></p>
+                  <div vocab="http://schema.org/" typeof="Person">
+                      <span property="workLocation"><h3>Globe informatique</h3></span>
+                      <span property="jobTitle" class="info">User Support Technician</span><span>&bull;</span> <em class="date">January 2012 - Agost 2013</em></p>
                       <span property="adress" ></span>
 </div>
 </div>
             </div> <!-- item end -->
             <div class="row item">
                <div class="twelve columns">
-                  <div vocab="http://schema.org/" typeof="Place">
-                      <span property="jobLocation" ><h3>SOMEGI</h3></span>
-                      <span property="title" class="info">Developer</span><span>&bull;</span> <em class="date">February 2010 - Avril 2012</em></p>
+                  <div vocab="http://schema.org/" typeof="Person">
+                      <span property="workLocation" ><h3>SOMEGI</h3></span>
+                      <span property="jobTitle" class="info">Developer</span><span>&bull;</span> <em class="date">February 2010 - Avril 2012</em></p>
                     </div>
                </div>
             </div> <!-- item end -->
@@ -231,9 +234,9 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
                <div class="twelve columns">
                     </div>
                   </div>
-                  <div vocab="http://schema.org/" typeof="Place">
-                      <span property="jobLocation"><h3>Groupe Chimique Tunisien</h3></span>
-                      <span property="title" class="info">Dotnet Developer</span><span>&bull;</span> <em class="date">March 2009 - Juin 2009</em></p>
+                  <div vocab="http://schema.org/" typeof="Person">
+                      <span property="workLocation"><h3>Groupe Chimique Tunisien</h3></span>
+                      <span property="jobTitle" class="info">Dotnet Developer</span><span>&bull;</span> <em class="date">March 2009 - Juin 2009</em></p>
                </div>
             </div> <!-- item end -->
          </div> <!-- main-col end -->
@@ -246,8 +249,8 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
          </div>
          <div class="nine columns main-col">
 				<div class="bars">
-<div vocab="http://schema.org/" typeof="Text">
-				   <ul class="skills" property="Text">
+<div vocab="http://schema.org/" typeof="Person">
+				   <ul class="skills" property="skills">
                     
 					   <li><span class="bar-expand photoshop"></span><em>Software reliability.</em></li>
                   <li><span class="bar-expand illustrator"></span><em>Network management.</em></li>
