@@ -34,7 +34,7 @@
 
 <body>
 
-<div vocab="http://schema.org/"  typeof="Person">
+<div vocab="http://schema.org/" resource="#contact" typeof="Person">
    <!-- Header
    ================================================== -->
  <header id="home" style="backgroundurl(../images/background_marouane.jpg) no-repeat top center;" >
@@ -120,9 +120,9 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
            </section>
             <hr />
             <ul class="social">
-              <li><a rel="foaf:url" href="https://plus.google.com/103044872363832952335"><i class="fa fa-google-plus"></i></a></li>
-              <li><a rel="foaf:url" href="https://www.linkedin.com/in/nassim-touati/"><i class="fa fa-linkedin"></i></a></li>
-              <li><a rel="foaf:url" href="https://github.com/nassimtouati"><i class="fa fa-github"></i></a></li>
+              <li><a rel="foaf:Google+" href="https://plus.google.com/103044872363832952335"><i class="fa fa-google-plus"></i></a></li>
+              <li><a rel="foaf:Linked" href="https://www.linkedin.com/in/nassim-touati/"><i class="fa fa-linkedin"></i></a></li>
+              <li><a rel="foaf:GitHub" href="https://github.com/nassimtouati"><i class="fa fa-github"></i></a></li>
             </ul>
          </div>
       </div>
@@ -172,10 +172,8 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
                     </div>
                       Phone: <span property="telephone">+33 04 77 42 17 00</span>
                     <div>
-                       <a rel="foaf:url" href="https://depinfo.univ-st-etienne.fr/Master/dsc.php">Master degree in Data and connected system</a><span>&bull;</span> <em class="date">jully 2018</em>
-                       <meta property="educationalCredentialAwarded" content="Master degree in Data and connected system" />
-                      
-</div>
+                       <a rel="foaf:Master" href="https://depinfo.univ-st-etienne.fr/Master/dsc.php">Master's degree in Data and connected system</a><span>&bull;</span> <em class="date">jully 2018</em>
+                      </div>
                     </div>
                   </div>
             </div> <!-- item end -->
@@ -199,10 +197,8 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
                     </div>
                     Phone: <span property="telephone">+39 011 670 6111</span>
                     <div>
-                       <a rel="foaf:url" href="http://magistrale.educ.di.unito.it/index.php/studiare-informatica/informazioni-generali/reti-e-sistemi-informatici">Master's degree in Networking and Information System</a><span>&bull;</span> <em class="date">jully 2018</em>
-                       <meta property="educationalCredentialAwarded" content="Laurea Magistrale in Reti e sistemi informatici" />
-                      
-</div>
+                       <a rel="foaf:Master" href="http://magistrale.educ.di.unito.it/index.php/studiare-informatica/informazioni-generali/reti-e-sistemi-informatici">Master's degree in Networking and Information System</a><span>&bull;</span> <em class="date">jully 2018</em>
+                      </div>
                     </div>
                   </div>
 
@@ -229,10 +225,8 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
                     </div>
                     Phone: <span property="telephone">+216 71 142 700</span>
                     <div>
-                       <a rel="foaf:url" href="http://www.iictunisi.esteri.it/iic_tunisi/fr/imparare_italiano/certificazioni">CILS</a><span>&bull;</span> <em class="date">jully 2014</em>
-                       <meta property="educationalCredentialAwarded" content="Certificato Italiano come Lingua Straniera" />
-                     
-</div>
+                       <a rel="foaf:Certification" href="http://www.iictunisi.esteri.it/iic_tunisi/fr/imparare_italiano/certificazioni">CILS</a><span>&bull;</span> <em class="date">jully 2014</em>
+                      </div>
                     </div>
                   </div>
 
@@ -256,7 +250,7 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
                     </div>
                     Phone: <span property="telephone">+216 71 145 700</span>
                     <div>
-                       <a rel="foaf:url" href="http://www.amideast.org/egypt/testing/toeic%C2%AE-test">TOEIC: Test Of English for International Communications</a><span>&bull;</span> <em class="date">jully 2010</em>
+                       <a rel="foaf:Certification" href="http://www.amideast.org/egypt/testing/toeic%C2%AE-test">TOEIC: Test Of English for International Communications</a><span>&bull;</span> <em class="date">jully 2010</em>
                        <meta property="educationalCredentialAwarded" content="Test Of English for International Communications" />
 
                       </div>
@@ -286,10 +280,8 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
                     </div>
                     Phone: <span property="telephone">+216 75 272 280</span>
                     <div>
-                       <a rel="foaf:url" href="http://www.isggb.rnu.tn">Licence fondamentale en Informatique appliquée à la gestion</a><span>&bull;</span> <em class="date">jully 2009</em>
-                       <meta property="educationalCredentialAwarded" content="Licence fondamentale en Informatique appliquée à la gestion" />
-                      
-</div>
+                       <a rel="foaf:Licence" href="http://www.isggb.rnu.tn">Licence fondamentale en Informatique appliquée à la gestion</a><span>&bull;</span> <em class="date">jully 2009</em>
+                      </div>
                     </div>
 
                </div>
@@ -391,12 +383,13 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
 
 
 				<div class="bars">
-
-				   <ul class="skills">
+<div vocab="http://schema.org/" typeof="JobPosting">
+				   <ul class="skills" property="skills">
 					   <li><span class="bar-expand photoshop"></span><em>Software reliability.</em></li>
 
                   <li><span class="bar-expand illustrator"></span><em>Network management.</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Neural network.</em></li>
+
+            <li><span class="bar-expand wordpress"></span><em>Neural network.</em></li>
 						<li><span class="bar-expand css"></span><em>Neural Networks.</em></li>
 						<li><span class="bar-expand html5"></span><em>Data Analysis.</em></li>
                   <li><span class="bar-expand jquery"></span><em>Web Services.</em></li>
@@ -404,7 +397,7 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
                   <li><span class="bar-expand css"></span><em>Database.</em></li>
 
 					</ul>
-
+</div>
 				</div><!-- end skill-bars -->
 
 			</div> <!-- main-col end -->
