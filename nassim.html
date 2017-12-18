@@ -161,11 +161,11 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
 
             <div class="row item">
                <div class="twelve columns">
-                 <div vocab="http://schema.org/" resource="#ujm" typeof="CollegeOrUniversity">
+                 <div vocab="http://schema.org/"  typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="https://www.univ-st-etienne.fr">Jean Monnet University Saint-Etienne (France)</a>
+                      <a property="url" href="https://www.univ-st-etienne.fr"><span property="title">Jean Monnet University Saint-Etienne (France)</span></a>
                     </div>
-                    <div property="address" resource="#ujm-address" typeof="PostalAddress">
+                    <div property="address"  typeof="PostalAddress">
                       <span property="streetAddress">10 Rue Tréfilerie 42100</span>
                       <span property="addressLocality">Saint-Etienne</span>,
                       <span property="addressRegion">Loire</span>
@@ -185,11 +185,12 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
                <div class="twelve columns">
 
 
-                 <div vocab="http://schema.org/" resource="#unito" typeof="CollegeOrUniversity">
+                 <div vocab="http://schema.org/"  typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="https://www.unito.it">Turin university (Italy)</a>
+                      <a property="url" href="https://www.unito.it"><span property="title">Turin university (Italy)</span></a>
+
                     </div>
-                    <div property="address" resource="#unito-address" typeof="PostalAddress">
+                    <div property="address"  typeof="PostalAddress">
                       <span property="streetAddress">Via Giuseppe Verdi, 8, 10124</span>
                       <span property="addressLocality">Torino</span>,
                       <span property="addressRegion">Province de Turin</span>
@@ -212,11 +213,12 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
 
 
 
-                 <div vocab="http://schema.org/" resource="#iict" typeof="CollegeOrUniversity">
+                 <div vocab="http://schema.org/"  typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="http://www.iictunisi.esteri.it">Istituto Italiano di Cultura di Tunisi (Tunisia)</a>
+                      <a property="url" href="http://www.iictunisi.esteri.it"><span property="title">Istituto Italiano di Cultura di Tunisi (Tunisia)</span></a>
+
                     </div>
-                    <div property="address" resource="#iict-address" typeof="PostalAddress">
+                    <div property="address"  typeof="PostalAddress">
                       <span property="streetAddress">80 Ave Mohamed V, Tunis</span>
                       <span property="addressLocality">Tunisia</span>,
                       <span property="addressRegion">Tunis</span>
@@ -236,11 +238,12 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
 
                <div class="twelve columns">
 
-                 <div vocab="http://schema.org/" resource="#cct" typeof="CollegeOrUniversity">
+                 <div vocab="http://schema.org/" typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="http://www.amideast.org">AMIDEAST Tunisia (Tunisia)</a>
+                      <a property="url" href="http://www.amideast.org"><span property="title">AMIDEAST Tunisia (Tunisia)</span></a>
+
                     </div>
-                    <div property="address" resource="#cct-address" typeof="PostalAddress">
+                    <div property="address"  typeof="PostalAddress">
                       <span property="streetAddress">33، Rue Ahmed Rami, Belvedere</span>
                       <span property="addressLocality">Tunisia</span>,
                       <span property="addressRegion">Tunis</span>
@@ -263,11 +266,12 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
 
                <div class="twelve columns">
 
-                 <div vocab="http://schema.org/" resource="#isg" typeof="CollegeOrUniversity">
+                 <div vocab="http://schema.org/"  typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="http://www.isggb.rnu.tn">Istitut Supérieur de Gestion de Gabes (Tunisia)</a>
+                      <a property="url" href="http://www.isggb.rnu.tn"><span property="title">Istitut Supérieur de Gestion de Gabes (Tunisia)</span></a>
+
                     </div>
-                    <div property="address" resource="#isg-address" typeof="PostalAddress">
+                    <div property="address"  typeof="PostalAddress">
                       <span property="streetAddress">Rue Jilani Habib, Gabès 6002</span>
                       <span property="addressLocality">Tunisia</span>,
                       <span property="addressRegion">Gabes, Tunisia</span>
@@ -320,9 +324,11 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
 
                <div class="twelve columns">
 
-                  <h3>SOMEGI</h3>
-                  <p class="info">Developer <span>&bull;</span> <em class="date">February 2010 - Avril 2012</em></p>
-
+                  <div vocab="http://schema.org/" typeof="JobPosting">
+                    
+                      <span property="jobLocation"><h3>SOMEGI</h3></span>
+                      <span property="title" class="info">Developer</span><span>&bull;</span> <em class="date">February 2010 - Avril 2012</em></p>
+                    </div>
                </div>
 
             </div> <!-- item end -->
@@ -330,8 +336,20 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
 
                <div class="twelve columns">
 
+                 
+                    
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
                   <h3>Groupe Chimique Tunisien</h3>
-                  <p class="info">Dotnet Developer<span>&bull;</span> <em class="date">March 2009 - Juin 2009</em></p>
+                  <p class="info" property="addressRegion">Dotnet Developer<span>&bull;</span> <em class="date">March 2009 - Juin 2009</em></p>
 
                </div>
 
@@ -408,6 +426,7 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
          <div class="twelve columns">
 
             <ul class="social-links">
+
 
               <li><a property="url" href="https://plus.google.com/103044872363832952335"><i class="fa fa-google-plus"></i></a></li>
               <li><a property="url" href="https://www.linkedin.com/in/nassim-touati/"><i class="fa fa-linkedin"></i></a></li>
