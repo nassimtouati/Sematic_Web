@@ -1,0 +1,32 @@
+@prefix og: <http://ogp.me/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://rdfa.info/play/>
+   og:description "Currently in a master's degree about Big Data and Internet of Objects, I am interested by research and plan to continue my studies with a PhD degree."@en;
+   og:type "Organization"@en;
+   og:url ""@en;
+   og:image "images/UJM.jpg"@en .
+_:1 
+   rdf:type schema:#Person;
+   schema:#name " Arslen REMACI"@en;
+   foaf:facebook <https://www.facebook.com/arslane.remaci>;
+   foaf:github <https://github.com/Arslen>;
+   schema:#image <https://rdfa.info/play/images/profile-pic.jpg>;
+   schema:#description """Currently in a master's degree about Big Data and Internet of Objects, I am interested by research and plan to continue my studies with a PhD degree.
+            """@en;
+   schema:#address """
+						    18 rue de la Visitation
+						         42000 Saint-Étienne, France """@en;
+   schema:#telephone "07 78 68 74 08"@en;
+   schema:#email """
+                     arslen.r@gmail.com """@en .
+_:2 
+   rdf:type schema:#Organization;
+   schema:#name """
+                      Université Jean Monnet, Saint Etienne 
+                      """@en;
+   schema:#subOrganization """
+                      Master's degree, \"Données et Systèmes Connectés" 
+                      """@en .
