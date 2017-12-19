@@ -1,0 +1,113 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix schema: <http://schema.org/> .
+
+_:1 
+   rdf:type <https://websemantic.herokuapp.com/Person>;
+   <https://websemantic.herokuapp.com/url> "https://websemantic.herokuapp.com/nassim.html"@en;
+   <https://websemantic.herokuapp.com/type> "Person"@en;
+   <https://websemantic.herokuapp.com/title> "Nassim TOUATI"@en;
+   <https://websemantic.herokuapp.com/description> "Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne."@en .
+<https://rdfa.info/play/>
+   rdfa:usesVocabulary schema:;
+   rdfa:usesVocabulary schema: property= .
+<https://rdfa.info/play/#contact>
+   rdf:type schema:Person;
+   schema:name "Nassim TOUATI"@en;
+   schema:description """Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne en France, et en master 2 Réseaux et Systèmes Informatiques à l'université de Turin en Italie (Formation à distance). Mes compétences techniques, issues de mes études universitaires, me permettent de réaliser un nombre varié de missions.
+Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la recherche d'un stage pour 6 mois, je suis intéressé aux domaines de développement informatiques (Java, Spring Boot, MySQL, WebService, ...) le domaine de Data Mining, le domaine machine learning plus particulièrement les réseaux de neurones.
+                    />
+                    <div class="""@en;
+   schema:address <https://rdfa.info/play/address>;
+   schema:telephone "07 61 24 38 97"@en;
+   schema:email <mailto:nassim.touati@etu.univ-st-etienne.fr> .
+_:2 
+   rdf:type schema:Person;
+   schema:image <https://websemantic.herokuapp.com/images/nassim.png> .
+<https://rdfa.info/play/address>
+   rdf:type schema:PostalAddress;
+   schema:streetAddress "35 A, rue Gabriel Péri 42100"@en;
+   schema:addressLocality "Saint-Etienne"@en;
+   schema:addressRegion "Loire"@en .
+_:3 
+   rdf:type schema: property=CollegeOrUniversity;
+   schema: property=url <https://www.univ-st-etienne.fr>;
+   schema: property=name "Jean Monnet University Saint-Etienne (France)"@en;
+   schema: property=address _:4;
+   schema: property=telephone "+33 04 77 42 17 00"@en .
+_:4 
+   rdf:type schema: property=PostalAddress;
+   schema: property=streetAddress "10 Rue Tréfilerie 42100"@en;
+   schema: property=addressLocality "Saint-Etienne"@en;
+   schema: property=addressRegion "Loire"@en .
+_:5 
+   rdf:type schema:CollegeOrUniversity;
+   schema:url <https://www.unito.it>;
+   schema:name "Turin university (Italy)"@en;
+   schema:address _:6;
+   schema:telephone "+39 011 670 6111"@en .
+_:6 
+   rdf:type schema:PostalAddress;
+   schema:streetAddress "Via Giuseppe Verdi, 8, 10124"@en;
+   schema:addressLocality "Torino"@en;
+   schema:addressRegion "Province de Turin"@en .
+_:7 
+   rdf:type schema:CollegeOrUniversity;
+   schema:url <http://www.iictunisi.esteri.it>;
+   schema:name "Istituto Italiano di Cultura di Tunisi (Tunisia)"@en;
+   schema:address _:8;
+   schema:telephone "+216 71 142 700"@en .
+_:8 
+   rdf:type schema:PostalAddress;
+   schema:streetAddress "80 Ave Mohamed V, Tunis"@en;
+   schema:addressLocality "Tunisia"@en;
+   schema:addressRegion "Tunis"@en .
+_:9 
+   rdf:type schema:CollegeOrUniversity;
+   schema:url <http://www.amideast.org>;
+   schema:name "AMIDEAST Tunisia (Tunisia)"@en;
+   schema:address _:10;
+   schema:telephone "+216 71 145 700"@en;
+   schema:educationalCredentialAwarded "Test Of English for International Communications"@en .
+_:10 
+   rdf:type schema:PostalAddress;
+   schema:streetAddress "33، Rue Ahmed Rami, Belvedere"@en;
+   schema:addressLocality "Tunisia"@en;
+   schema:addressRegion "Tunis"@en .
+_:11 
+   rdf:type schema:CollegeOrUniversity;
+   schema:url <http://www.isggb.rnu.tn>;
+   schema:name "Istitut Supérieur de Gestion de Gabes (Tunisia)"@en;
+   schema:address _:12;
+   schema:telephone "+216 75 272 280"@en .
+_:12 
+   rdf:type schema:PostalAddress;
+   schema:streetAddress "Rue Jilani Habib, Gabès 6002"@en;
+   schema:addressLocality "Tunisia"@en;
+   schema:addressRegion "Gabes, Tunisia"@en .
+_:13 
+   rdf:type schema:Person;
+   schema:workLocation "Globe informatique"@en;
+   schema:jobTitle "User Support Technician"@en;
+   schema:adress ""@en .
+_:14 
+   rdf:type schema:Person;
+   schema:workLocation "SOMEGI"@en;
+   schema:jobTitle "Developer"@en .
+_:15 
+   rdf:type schema:Person;
+   schema:workLocation "Groupe Chimique Tunisien"@en;
+   schema:jobTitle "Dotnet Developer"@en .
+_:16 
+   rdf:type schema:Person;
+   schema:skills """
+                    
+					   Software reliability.
+                  Network management.
+            Neural network.
+						Neural Networks.
+						Data Analysis.
+                  Web Services.
+                  Programming language.
+                  Database.
+					"""@en .
