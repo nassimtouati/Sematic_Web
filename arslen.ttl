@@ -24,9 +24,40 @@ _:1
                      arslen.r@gmail.com """@en .
 _:2 
    rdf:type schema:#Organization;
+   schema:#description """
+                        1ère année : Tronc Commun
+                        Acquisition des notions fondamentales (mathématiques, physique, découverte des matières technologiques, langues, sciences humaines et sociales, gestion de projets).
+
+                        2ème et 3ème année : Préparer son projet professionnel
+                        9 parcours de formation au choix.
+                        De nombreuses modules au choix pour personnaliser son cursus.
+                      """@en;
+   schema:#description """
+                    La Licence d’Informatique permet aux étudiants d’acquérir, en trois ans, des bases solides en Informatique, incluant des éléments d’algorithmique, d’informatique théorique, de programmation, d’architecture, de réseau, de gestion des masses de données, de techniques internet, de développement Web. 
+                    Elle favorise également l’acquisition de compétences linguistiques (anglais), de compétences transversales (aptitude à l’analyse et à la synthèse, à l’expression écrite et orale, au travail individuel et collectif, à la conduite de projets, au repérage et à l’exploitation des ressources documentaires, au maniement des outils numériques) et de compétences préprofessionnelles (connaissance des champs de métiers associés à la formation, élaboration du projet personnel et professionnel, capacité à réinvestir ses acquis dans un contexte professionnel).
+                  """@en;
+   schema:#description """
+                    Creation of a training dataset from Wikipedia's abstracts.
+                  """@en;
+   schema:#addressLocality "Saint Etienne"@en;
+   schema:#employmentType " Research internship, 3 months and a half"@en;
+   schema:#startDate "April 2017"@en;
+   schema:#startDate "January 2017"@en;
+   schema:#endDate "July 2017"@en;
+   schema:#endDate "February 2016"@en .
+_:3 
    schema:#name """
                       Université Jean Monnet, Saint Etienne 
                       """@en;
-   schema:#subOrganization """
-                      Master's degree, \"Données et Systèmes Connectés" 
+   schema:#subOrganization _:4 .
+<https://www.univ-st-etienne.fr>
+   schema:#addressLocality "Saint Etienne"@en .
+_:4 
+   schema:#description """
+                        Parcours formant des spécialistes capables de répondre aux problématiques de massification des données et
+                        d'interconnexion des systèmes informatiques et objets communicants liés à la métamorphose numérique actuelle 
+                        (web, Internet des objets, big data) en maîtrisant la chaîne de traitement allant de la donnée brute à son analyse,
+                        ainsi que son exploitation dans des systèmes intelligents interconnectés.
                       """@en .
+<https://www.telecom-st-etienne.fr>
+   schema:#addressLocality "Saint Etienne"@en .
