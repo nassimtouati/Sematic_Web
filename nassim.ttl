@@ -1,8 +1,8 @@
 @prefix og: <http://ogp.me/ns#> .
 @prefix rdfa: <http://www.w3.org/ns/rdfa#> .
 @prefix schema: <http://schema.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <https://rdfa.info/play/>
    og:description "Je suis un étudiant en master 2 Données et Systèmes Connectées á l´université Jean Monnet de Saint-Etienne."@en;
@@ -10,17 +10,19 @@
    og:url "https://websemantic.herokuapp.com/nassim.html"@en;
    og:image "https://websemantic.herokuapp.com/images/nassim.png"@en;
    rdfa:usesVocabulary schema:;
-   rdfa:usesVocabulary schema: property= .
-_:1 
-   rdf:type schema:#Person;
+   rdfa:usesVocabulary schema: property=;
    foaf:google+ <https://plus.google.com/103044872363832952335>;
    foaf:linkedin <https://www.linkedin.com/in/nassim-touati/>;
    foaf:github <https://github.com/nassimtouati> .
+_:1 
+   rdf:type schema:#Person .
 <https://rdfa.info/play/#contact>
    rdf:type schema:Person;
    foaf:google+ <https://plus.google.com/103044872363832952335>;
    foaf:linkedin <https://www.linkedin.com/in/nassim-touati/>;
-   foaf:github <https://github.com/nassimtouati> .
+   foaf:github <https://github.com/nassimtouati>;
+   schema:address _:4;
+   schema:telephone "+33 04 77 42 17 00"@en .
 _:2 
    rdf:type schema:Person;
    schema:image <https://websemantic.herokuapp.com/images/nassim.png>;
@@ -40,14 +42,12 @@ Serieux, motivé , tels sont mes principaux traits de caractère. Je suis á la 
 _:3 
    rdf:type schema: property=CollegeOrUniversity;
    schema: property=url <https://www.univ-st-etienne.fr>;
-   schema: property=name "Jean Monnet University Saint-Etienne (France)"@en;
-   schema: property=address _:4;
-   schema: property=telephone "+33 04 77 42 17 00"@en .
+   schema: property=name "Université Jean Monnet Saint-Etienne (France)"@en .
 _:4 
-   rdf:type schema: property=PostalAddress;
-   schema: property=streetAddress "10 Rue Tréfilerie 42100"@en;
-   schema: property=addressLocality "Saint-Etienne"@en;
-   schema: property=addressRegion "Loire"@en .
+   rdf:type schema:PostalAddress;
+   schema:streetAddress "10 Rue Tréfilerie 42100"@en;
+   schema:addressLocality "Saint-Etienne"@en;
+   schema:addressRegion "Loire"@en .
 _:5 
    rdf:type schema:CollegeOrUniversity;
    schema:url <https://www.unito.it>;
@@ -57,12 +57,12 @@ _:5
 _:6 
    rdf:type schema:PostalAddress;
    schema:streetAddress "Via Giuseppe Verdi, 8, 10124"@en;
-   schema:addressLocality "Torino"@en;
+   schema:addressLocality "Turin"@en;
    schema:addressRegion "Province de Turin"@en .
 _:7 
    rdf:type schema:CollegeOrUniversity;
    schema:url <http://www.iictunisi.esteri.it>;
-   schema:name "Istituto Italiano di Cultura di Tunisi (Tunisia)"@en;
+   schema:name "Institut italien de culture de Tunis (Tunisia)"@en;
    schema:address _:8;
    schema:telephone "+216 71 142 700"@en .
 _:8 
@@ -108,16 +108,19 @@ _:15
    schema:jobTitle "Developpeur .Net"@en .
 _:16 
    rdf:type schema:Person;
-   schema:skills """
-                    
-					   Software reliability.
-                  Network management.
+   schema:skills """      
+					  Software reliability.
+            Network management.
             Neural network.
 						Neural Networks.
 						Data Analysis.
-                  Web Services.
-                  Programming language.
-                  Database.
-			"""@en .
+            Web Services.
+            Programming language.
+            Database.
+			    """@en .
 _:17 
-   rdf:type schema:Person .
+   rdf:type schema:Person;
+   schema:follows "La science, La nouvelle technologies"@en .
+_:18 
+   rdf:type schema:Person;
+   schema:follows "Les randonnées, Les films, Football"@en .
