@@ -6,8 +6,8 @@
 <https://rdfa.info/play/>
    og:description "Welcome to the Homepage of our group"@en;
    og:type "Organization"@en;
-   og:url ""@en;
-   og:image "images/UJM.jpg"@en;
+   og:url "https://websemantic.herokuapp.com/"@en;
+   og:image "https://websemantic.herokuapp.com/images/UJM.jpg"@en;
    rdfa:usesVocabulary schema: .
 _:1 
    rdf:type schema:#Organization;
