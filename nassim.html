@@ -3,415 +3,327 @@
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta property="og:url"                content=" " />
+<meta property="og:url"              content="https://websemantic.herokuapp.com/nassim.html" />
 <meta property="og:type"               content="Person" />
 <meta property="og:title"              content="Nassim TOUATI" />
-<meta property="og:description"        content="Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne." />
-
+<meta property="og:image"	content="https://websemantic.herokuapp.com/images/nassim.png"/> 	
+<meta property="og:description"        content="Je suis un &eacute;tudiant en master 2 Donn&eacute;es et Syst&egrave;mes Connect&eacute;es &aacute; l&acute;universit&eacute; Jean Monnet de Saint-Etienne." />
+ 
+	
+<div prefix="
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  foaf: http://xmlns.com/foaf/0.1/
+  ws: https://websemantic.herokuapp.com/
+  xsd: http://www.w3.org/2001/XMLSchema#"
+  typeof="ws:Person">
    <!-- Mobile Specific Metas
    ================================================== -->
+    <!-- Mobile Specific Metas
+   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 	<!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
-
    <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
-
    <!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
-
 </head>
-
 <body>
-<div vocab="http://schema.org/" typeof="Person">
+<div vocab="http://schema.org/" resource="#contact" typeof="Person">
    <!-- Header
    ================================================== -->
-   <header id="home">
-
-
-
+ <header id="home" style="backgroundurl(../images/background_marouane.jpg) no-repeat top center;" >
+  <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <ul id="nav" class="nav">
+                <li class="current"><a class="button" href="home.html">NAM Group</a></li>
+            <li class="current"><a class="smoothscroll" href="#home">ABOUT</a></li>
+	         <li><a class="smoothscroll" href="#resume">EDUCATION</a></li>
+		 <li><a class="smoothscroll" href="#work">WORK</a></li>
+		   <li><a class="smoothscroll" href="#skills">SKILLS</a></li>
+         </ul> <!-- end #nav -->
+      </nav> <!-- end #nav-wrap -->
+      
       <div class="row banner">
          <div class="banner-text">
-           <section id="nassim">
-
-              <div class="row">
-
-                 <div class="three columns">
-
-
-                    <div rel="foaf:depiction">
-                          <img style="float:left; width:100%" src="images/nassim.png" />
-                        </div>
-
-
-
-
-                 </div>
-
-                 <div class="nine columns main-col">
-
-                    <meta property="og:title"              content="Nassim TOUATI" />
-
-                    <meta property="og:description"        content="Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne en France, et en master 2 Réseaux et Systèmes Informatiques à l'université de Turin en Italie (Formation à distance). Mes compétences techniques, issues de mes études universitaires, me permettent de réaliser un nombre varié de missions.
-
-Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la recherche d'un stage pour 6 mois, je suis intéressé aux domaines de développement informatiques (Java, Spring Boot, MySQL, WebService, ...) le domaine de Data Mining, le domaine machine learning plus particulièrement les réseaux de neurones.
-                    />
-
-                    <div class="row">
-
-                       <div class="columns contact-details">
-
-                          <h2>Contact Details</h2>
-
-                       <span>Nassim TOUATI</span><br>
-                       <div property="address" resource="address" typeof="PostalAddress">
-
-                        <span property="streetAddress">35 A, rue Gabriel Péri 42100</span>
-                        <span property="addressLocality">Saint-Etienne</span>,
-                        <span property="addressRegion">Loire</span>
-
-                             </div>
-
-
-                       <span property="telephone">07 61 24 38 97</span><br>
-                       <div>
-    E-mail: <a property="email" href="mailto:nassim.touati@etu.univ-st-etienne.fr">nassim.touati@etu.univ-st-etienne.fr</a>
-  </div>
-                     </p>
-
-                       </div>
-
-                       <div class="columns download">
-                          <p>
-                             <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                          </p>
-                       </div>
-
-                    </div> <!-- end row -->
-
-                 </div> <!-- end .main-col -->
-
-              </div>
-
-           </section>
+            <h1 class="responsive-headline">Je suis Nassim TOUATI.</h1>
+            <h3>Je suis &eacute;tudiant en Master 2 Donn&eacute;es et systemes connect&eacute;es, je suis interess&eacute; par <span>le web s&eacute;mantique</span>, <span>le d&eacute;veloppement web</span> et <span>les systemes connect&eacute;es</span>. cliquez ici <a class="smoothscroll" href="#about">pour plus</a>
+            d information <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul class="social">
-              <li><a rel="foaf:Google+" href="https://plus.google.com/103044872363832952335"><i class="fa fa-google-plus"></i></a></li>
-              <li><a rel="foaf:Linked" href="https://www.linkedin.com/in/nassim-touati/"><i class="fa fa-linkedin"></i></a></li>
-              <li><a rel="foaf:GitHub" href="https://github.com/nassimtouati"><i class="fa fa-github"></i></a></li>
+               <li><a property="url" href="https://plus.google.com/103044872363832952335"><i class="fa fa-google-plus"></i></a></li>
+               <li><a property="url" href="https://www.linkedin.com/in/nassim-touati/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a property="url" href="https://github.com/nassimtouati"><i class="fa fa-github"></i></a></li>
             </ul>
          </div>
       </div>
-
       <p class="scrolldown">
-         <a class="smoothscroll" href="#nassim"><i class="icon-down-circle"></i></a>
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
       </p>
+</header>
+      <!-- About Section
+      ================================================== -->
+      <section id="about">
+        <div vocab="http://schema.org/" typeof="Person">
+         <div class="row">
+      
+            <div class="three columns">
+      
+               <img class="profile-pic" property="image" src="https://websemantic.herokuapp.com/images/nassim.png" alt="" />
+      
+            </div>
+      
+            <div class="nine columns main-col">
+    
+               <h2>About Me</h2>
+               <p><span property="description">Je suis un &eacute;tudiant en master 2 Donn&eacute;es et Syst&egrave;mes Connect&eacute;es &aacute; l&acute;universit&eacute; Jean Monnet de Saint-Etienne en France, et en master 2 R&eacute;seaux et Systemes Informatiques &aacute; l&acute;universit&eacute; de Turin en Italie (Formation à distance). Mes compet&eacute;nces techniques, issues de mes &eacute;tudes universitaires, me permettent de realiser un nombre vari&eacute; de missions.
+Serieux, motiv&eacute; , tels sont mes principaux traits de caract&egrave;re. Je suis &aacute; la recherche d&acute;un stage pour 6 mois, je suis interess&eacute; aux domaines de d&eacute;veloppement informatiques (Java, Spring Boot, MySQL, WebService) le domaine de Data Mining, le domaine machine learning plus particuli&egrave;rement les r&eacute;seaux de neurones.</span>
+               </p>
+      
+               <div class="row">
+      
+                  <div class="columns contact-details">
+      
+                     <h2>Contact Details</h2>
+                     <p class="address">
+                  <span property="name"  content="Nassim TOUATI">Nassim TOUATI</span><br>
+                  <a property="url" href="https://www.google.fr/maps/place/35+Rue+Gabriel+P%C3%A9ri,+42100+Saint-%C3%89tienne/@45.4120492,4.3853809,17z/data=!3m1!4b1!4m8!1m2!2m1!1s35+A+rue+Gabriel+Peri!3m4!1s0x47f5aed2647432a3:0x4d01cc38e799ea3c!8m2!3d45.4120492!4d4.3875696">
+<div property="address" resource="address" typeof="PostalAddress">
+                    <span property="streetAddress">35 A, rue Gabriel P&eacute;ri 42100</span><br>
+                        <span property="addressLocality">Saint-Etienne</span>
+                        <span property="addressRegion">Loire</span>
+                        </span><br> </a>
+                  <span property="telephone">07 61 24 38 97</span><br> 
+                      E-mail: <a property="email" href="mailto:nassim.touati@etu.univ-st-etienne.fr">nassim.touati@etu.univ-st-etienne.fr</a>
 
-   </header>
-
+                </p>
+      
+                  </div>
+      
+                  <div class="columns download">
+                     <p>
+                        <a href="#" class="button"><i class="fa fa-download"></i>Telecharger Cv</a>
+                     </p>
+                  </div>
+      
+               </div> <!-- end row -->
+      
+            </div> <!-- end .main-col -->
+      
+         </div>
+      </div>
+      </section> <!-- About Section End-->
 
    <!-- nassim Section
    ================================================== -->
    <!-- nassim Section End-->
-
-
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
-
       <!-- Education
       ----------------------------------------------- -->
       <div class="row education">
-
          <div class="three columns header-col">
             <h1><span>Education</span></h1>
          </div>
-
          <div class="nine columns main-col">
-
             <div class="row item">
                <div class="twelve columns">
-                 <div vocab="http://schema.org/" resource="#ujm" typeof="University">
+                 <div vocab="http://schema.org/ property="person"  typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="https://www.univ-st-etienne.fr">Jean Monnet University Saint-Etienne (France)</a>
+                      <a property="url" href="https://www.univ-st-etienne.fr"><span property="name">Jean Monnet University Saint-Etienne (France)</span></a>
                     </div>
-                    <div property="address" resource="#ujm-address" typeof="PostalAddress">
-                      <span property="streetAddress">10 Rue Tréfilerie 42100</span>
+                    <div property="address"  typeof="PostalAddress">
+                      <span property="streetAddress">10 Rue Tr&eacute;filerie 42100</span>
                       <span property="addressLocality">Saint-Etienne</span>,
                       <span property="addressRegion">Loire</span>
                     </div>
                       Phone: <span property="telephone">+33 04 77 42 17 00</span>
                     <div>
-                       <a rel="foaf:Master" href="https://depinfo.univ-st-etienne.fr/Master/dsc.php">Master's degree in Data and connected system</a><span>&bull;</span> <em class="date">jully 2018</em>
+                       <a href="https://depinfo.univ-st-etienne.fr/Master/dsc.php">Master en Donn&eacute;es et syst&egrave;mes connt&eacute;s</a><span>&bull;</span> <em class="date">juillet 2018</em>
                       </div>
                     </div>
                   </div>
             </div> <!-- item end -->
-
-
-
             <div class="row item">
-
                <div class="twelve columns">
-
-
-                 <div vocab="http://schema.org/" resource="#unito" typeof="University">
+                 <div vocab="http://schema.org/"  typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="https://www.unito.it">Turin university (Italy)</a>
+                      <a property="url" href="https://www.unito.it"><span property="name">Université de Turin (Italie)</span></a>
                     </div>
-                    <div property="address" resource="#unito-address" typeof="PostalAddress">
+                    <div property="address"  typeof="PostalAddress">
                       <span property="streetAddress">Via Giuseppe Verdi, 8, 10124</span>
                       <span property="addressLocality">Torino</span>,
                       <span property="addressRegion">Province de Turin</span>
                     </div>
                     Phone: <span property="telephone">+39 011 670 6111</span>
                     <div>
-                       <a rel="foaf:Master" href="http://magistrale.educ.di.unito.it/index.php/studiare-informatica/informazioni-generali/reti-e-sistemi-informatici">Master's degree in Networking and Information System</a><span>&bull;</span> <em class="date">jully 2018</em>
+                       <a href="http://magistrale.educ.di.unito.it/index.php/studiare-informatica/informazioni-generali/reti-e-sistemi-informatici">Master's degree in Networking and Information System</a><span>&bull;</span> <em class="date">juillet 2018</em>
                       </div>
                     </div>
                   </div>
-
-
-
             </div> <!-- item end -->
-
-
             <div class="row item">
-
                <div class="twelve columns">
-
-
-
-                 <div vocab="http://schema.org/" resource="#iict" typeof="ecole">
+                 <div vocab="http://schema.org/"  typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="http://www.iictunisi.esteri.it">Istituto Italiano di Cultura di Tunisi (Tunisia)</a>
+                      <a property="url" href="http://www.iictunisi.esteri.it"><span property="name">Istituto Italiano di Cultura di Tunisi (Tunisia)</span></a>
                     </div>
-                    <div property="address" resource="#iict-address" typeof="PostalAddress">
+                    <div property="address"  typeof="PostalAddress">
                       <span property="streetAddress">80 Ave Mohamed V, Tunis</span>
                       <span property="addressLocality">Tunisia</span>,
                       <span property="addressRegion">Tunis</span>
                     </div>
                     Phone: <span property="telephone">+216 71 142 700</span>
                     <div>
-                       <a rel="foaf:Certification" href="http://www.iictunisi.esteri.it/iic_tunisi/fr/imparare_italiano/certificazioni">CILS</a><span>&bull;</span> <em class="date">jully 2014</em>
+                       <a  href="http://www.iictunisi.esteri.it/iic_tunisi/fr/imparare_italiano/certificazioni">CILS</a><span>&bull;</span> <em class="date">juillet 2014</em>
                       </div>
                     </div>
                   </div>
-
-
-
-
             </div> <!-- item end -->
             <div class="row item">
-
                <div class="twelve columns">
-
-                 <div vocab="http://schema.org/" resource="#cct" typeof="ecole">
+                 <div vocab="http://schema.org/" typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="http://www.amideast.org">AMIDEAST Tunisia (Tunisia)</a>
+                      <a property="url" href="http://www.amideast.org"><span property="name">AMIDEAST Tunisia (Tunisie)</span></a>
                     </div>
-                    <div property="address" resource="#cct-address" typeof="PostalAddress">
+                    <div property="address"  typeof="PostalAddress">
                       <span property="streetAddress">33، Rue Ahmed Rami, Belvedere</span>
                       <span property="addressLocality">Tunisia</span>,
                       <span property="addressRegion">Tunis</span>
                     </div>
                     Phone: <span property="telephone">+216 71 145 700</span>
                     <div>
-                       <a rel="foaf:Certification" href="http://www.amideast.org/egypt/testing/toeic%C2%AE-test">TOEIC: Test Of English for International Communications</a><span>&bull;</span> <em class="date">jully 2010</em>
+                       <a  href="http://www.amideast.org/egypt/testing/toeic%C2%AE-test">TOEIC: Test Of English for International Communications</a><span>&bull;</span> <em class="date">jully 2010</em>
+                       <meta property="educationalCredentialAwarded" content="Test Of English for International Communications" />
                       </div>
                     </div>
                   </div>
-
             </div> <!-- item end -->
-
-
-
-
-
-
             <div class="row item">
-
                <div class="twelve columns">
-
-                 <div vocab="http://schema.org/" resource="#isg" typeof="Institut">
+                 <div vocab="http://schema.org/"  typeof="CollegeOrUniversity">
                    <div>
-                      <a property="url" href="http://www.isggb.rnu.tn">Istitut Supérieur de Gestion de Gabes (Tunisia)</a>
+                      <a property="url" href="http://www.isggb.rnu.tn"><span property="name">Istitut Sup&eacute;rieur de Gestion de Gabes (Tunisia)</span></a>
                     </div>
-                    <div property="address" resource="#isg-address" typeof="PostalAddress">
-                      <span property="streetAddress">Rue Jilani Habib, Gabès 6002</span>
+                    <div property="address"  typeof="PostalAddress">
+                      <span property="streetAddress">Rue Jilani Habib, Gabes 6002</span>
                       <span property="addressLocality">Tunisia</span>,
                       <span property="addressRegion">Gabes, Tunisia</span>
                     </div>
                     Phone: <span property="telephone">+216 75 272 280</span>
                     <div>
-                       <a rel="foaf:Licence" href="http://www.isggb.rnu.tn">Licence fondamentale en Informatique appliquée à la gestion</a><span>&bull;</span> <em class="date">jully 2009</em>
+                       <a href="http://www.isggb.rnu.tn">Licence fondamentale en Informatique appliqu&eacute;e &aacute; la gestion</a><span>&bull;</span> <em class="date">jully 2009</em>
                       </div>
                     </div>
-                  </div>
-
                </div>
-
             </div> <!-- item end -->
-
-
-
-
-
-
-
-
          </div> <!-- main-col end -->
-
       </div> <!-- End Education -->
-
-
+</div>
+	      </section>
       <!-- Work
       ----------------------------------------------- -->
+	      <section id="work">
       <div class="row work">
-
          <div class="three columns header-col">
             <h1><span>Work</span></h1>
          </div>
-
          <div class="nine columns main-col">
-
             <div class="row item">
-
                <div class="twelve columns">
-
-                  <h3>Globe informatique</h3>
-                  <p class="info">User Support Technician<span>&bull;</span> <em class="date">January 2012 - Agost 2013</em></p>
-                </div>
-
+                  <div vocab="http://schema.org/" typeof="Person">
+                      <span property="workLocation"><h3>Globe informatique</h3></span>
+                      <span property="jobTitle" class="info">Technicien support utilisateur</span><span>&bull;</span> <em class="date">January 2012 - Agost 2013</em></p>
+                      <span property="adress" ></span>
+</div>
+</div>
             </div> <!-- item end -->
-
             <div class="row item">
-
                <div class="twelve columns">
-
-                  <h3>SOMEGI</h3>
-                  <p class="info">Developer <span>&bull;</span> <em class="date">February 2010 - Avril 2012</em></p>
-
+                  <div vocab="http://schema.org/" typeof="Person">
+                      <span property="workLocation" ><h3>SOMEGI</h3></span>
+                      <span property="jobTitle" class="info">Developpeur</span><span>&bull;</span> <em class="date">Fevrier 2010 - Avril 2012</em></p>
+                    </div>
                </div>
-
             </div> <!-- item end -->
             <div class="row item">
-
                <div class="twelve columns">
-
-                  <h3>Groupe Chimique Tunisien</h3>
-                  <p class="info">Dotnet Developer<span>&bull;</span> <em class="date">March 2009 - Juin 2009</em></p>
-
+                    </div>
+                  </div>
+                  <div vocab="http://schema.org/" typeof="Person">
+                      <span property="workLocation"><h3>Groupe Chimique Tunisien</h3></span>
+                      <span property="jobTitle" class="info">Developpeur .Net</span><span>&bull;</span> <em class="date">March 2009 - Juin 2009</em></p>
                </div>
-
             </div> <!-- item end -->
-
          </div> <!-- main-col end -->
-
       </div> <!-- End Work -->
-
-
-
-
-      <!-- Skills
+     
+</section>
+	  <!-- Work
       ----------------------------------------------- -->
+	<section id="skills">
       <div class="row skill">
-
          <div class="three columns header-col">
             <h1><span>Skills</span></h1>
          </div>
-
          <div class="nine columns main-col">
-
-
-
 				<div class="bars">
-
-				   <ul class="skills">
+<div vocab="http://schema.org/" typeof="Person">
+				   <ul class="skills" property="skills">
+                    
 					   <li><span class="bar-expand photoshop"></span><em>Software reliability.</em></li>
-
                   <li><span class="bar-expand illustrator"></span><em>Network management.</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Neural network.</em></li>
+            <li><span class="bar-expand wordpress"></span><em>Neural network.</em></li>
 						<li><span class="bar-expand css"></span><em>Neural Networks.</em></li>
 						<li><span class="bar-expand html5"></span><em>Data Analysis.</em></li>
                   <li><span class="bar-expand jquery"></span><em>Web Services.</em></li>
                   <li><span class="bar-expand illustrator"></span><em>Programming language.</em></li>
                   <li><span class="bar-expand css"></span><em>Database.</em></li>
-
-					</ul>
-
+			</ul>
+</div>
 				</div><!-- end skill-bars -->
-
 			</div> <!-- main-col end -->
-
       </div> <!-- End skills -->
-
    </section> <!-- Resume Section End-->
-
-
    <!-- Portfolio Section
    ================================================== -->
-
-
-
    <!-- Call-To-Action Section
    ================================================== -->
-
-
-
    <!-- Testimonials Section
    ================================================== -->
-
-
    <!-- Contact Section
    ================================================== -->
    <!-- Contact Section End-->
-
-
    <!-- footer
    ================================================== -->
    <footer>
-
       <div class="row">
-
          <div class="twelve columns">
-
             <ul class="social-links">
-
-
               <li><a property="url" href="https://plus.google.com/103044872363832952335"><i class="fa fa-google-plus"></i></a></li>
               <li><a property="url" href="https://www.linkedin.com/in/nassim-touati/"><i class="fa fa-linkedin"></i></a></li>
               <li><a property="url" href="https://github.com/nassimtouati"><i class="fa fa-github"></i></a></li>
             </ul>
-
             <ul class="copyright">
                <li>&copy; Copyright 2017 NAM</li>
             </ul>
-
          </div>
-
          <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
       </div>
-
    </footer> <!-- Footer End-->
-
    <!-- Java Script
    ================================================== -->
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
@@ -419,5 +331,4 @@ Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la
    <script src="js/init.js"></script>
   </div>
 </body>
-
 </html>
