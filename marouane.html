@@ -8,8 +8,10 @@
    ================================================== -->
    <meta charset="utf-8">
 	<title>Marouane GAZOUZI</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta property="og:description" content="Interested in Data Analysis and Mining, i'm looking forward to be part of your compagny, and contribute in successful projects." />
+    <meta property="og:type" content="Organization" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/UJM.jpg" />
 
    <!-- Mobile Specific Metas
    ================================================== -->
@@ -33,7 +35,13 @@
 </head>
 
 <body>
-
+    <div prefix="
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  foaf: http://xmlns.com/foaf/0.1/
+  hg: http://hebergement//#
+  sc: http://schema.org/#
+  xsd: http://www.w3.org/2001/XMLSchema#">
+<div resource="#gazouzi" typeof="sc:Person">
    <!-- Header
    ================================================== -->
    <header id="home" style="backgroundurl(../images/background_marouane.jpg) no-repeat top center;" >
@@ -53,16 +61,16 @@
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">I'm Marouane GAZOUZI.</h1>
+            <h1 class="responsive-headline">I'm <span property="sc:name"> Marouane GAZOUZI</span>.</h1>
             <h3>I'm a Saint Etienne based <span>web developper</span>, <span>data scientist</span> and <span>data minner</span>. Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul class="social">
-               <li><a href="https://www.facebook.com/marouane.gazouzi"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://plus.google.com/u/0/106994976680902808735"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/marouane-gazouzi-57840b72/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://www.instagram.com/marouanegazouzi/"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://github.com/Kimeur"><i class="fa fa-github"></i></a></li>
+               <li><a property="foaf:facebook" href="https://www.facebook.com/marouane.gazouzi"><i class="fa fa-facebook"></i></a></li>
+               <li><a property="foaf:google+" href="https://plus.google.com/u/0/106994976680902808735"><i class="fa fa-google-plus"></i></a></li>
+               <li><a property="foaf:linkedin" href="https://www.linkedin.com/in/marouane-gazouzi-57840b72/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a property="foaf:instagram" href="https://www.instagram.com/marouanegazouzi/"><i class="fa fa-instagram"></i></a></li>
+               <li><a property="foaf:github" href="https://github.com/Kimeur"><i class="fa fa-github"></i></a></li>
             </ul>
          </div>
       </div>
@@ -82,7 +90,7 @@
 
          <div class="three columns">
 
-            <img class="profile-pic"  src="images/marouane.jpg" alt="" />
+            <img property="sc:image" class="profile-pic"  src="images/marouane.jpg" alt="" />
 
          </div>
 
@@ -90,7 +98,7 @@
 
             <h2>About Me</h2>
 
-            <p>Interested in Data Analysis and Mining, i'm looking forward to be part of your compagny, and contribute in successful projects.
+            <p property="sc:description">Interested in Data Analysis and Mining, i'm looking forward to be part of your compagny, and contribute in successful projects.
             </p>
 
             <div class="row">
@@ -99,12 +107,14 @@
 
                   <h2>Contact Details</h2>
                   <p class="address">
-						   <span>Marouane GAZOUZI</span><br>
-						   <a href="https://www.google.fr/maps/place/44+Rue+Jules+Ledin,+42000+Saint-%C3%89tienne/@45.4452671,4.3794704,17z/data=!3m1!4b1!4m5!3m4!1s0x47f5ac1c6ee08b17:0x67c192792ccdf613!8m2!3d45.4452671!4d4.3816591">44 Rue Jules Ledin<br>
-						         42000 Saint-Étienne France
-                     </span><br> </a>
-						   <span>07 53 61 58 61</span><br>
-                     <a href="mailto:gazouzimarouane@gmail.com">gazouzimarouane@gmail.com</a>
+                           <span>Marouane GAZOUZI</span><br>
+                              <span property="sc:address">
+						   <a href="https://www.google.fr/maps/place/44+Rue+Jules+Ledin,+42000+Saint-%C3%89tienne/@45.4452671,4.3794704,17z/data=!3m1!4b1!4m5!3m4!1s0x47f5ac1c6ee08b17:0x67c192792ccdf613!8m2!3d45.4452671!4d4.3816591"> 44 Rue Jules Ledin<br>
+						         42000 Saint-Étienne France </span>
+                    <br> </a> </span>
+                           <span property="sc:telephone">07 53 61 58 61</span><br>
+                              <span property="sc:email">
+                     <a href="mailto:gazouzimarouane@gmail.com" >  gazouzimarouane@gmail.com </a></span>
 					   </p>
 
                </div>
@@ -122,12 +132,12 @@
       </div>
 
    </section> <!-- About Section End-->
+    </div>
 
 
    <!-- Resume Section
    ================================================== -->
-   <section id="resume">
-
+   <section id="resume" >
       <!-- Education
       ----------------------------------------------- -->
       <div class="row education">
@@ -138,41 +148,48 @@
 
          <div class="nine columns main-col">
 
-            <div class="row item">
+            <div class="row item" typeof="sc:CollegeOrUniversity">
 
                <div class="twelve columns">
 
                   <h3><span>
-                      <a href="https://www.univ-st-etienne.fr">Université Jean Monnet de Saint Etienne </a>
+                      <span property="sc:name">
+                      <a property="sc:url" href="https://www.univ-st-etienne.fr">Université Jean Monnet de <span property="sc:addressLocality">Saint Etienne</span> </a>
+                      </span>
                       </span>
                   </h3>
+                    <span property="sc:subOrganization" typeof="Organization">
                   <p class="info"><span>
-                      <a href="http://depinfo.univ-st-etienne.fr/Master/dsc.php">Master Données et Systèmes Connectés </a>
-                      </span> <span>&bull;</span> <em class="date">2016-2018</em></p>
+                      
+                       <span >
+                      <a property="sc:url" href="https://www.depinfo.univ-st-etienne.fr/Master/dsc.php"> <span property="sc:name"> Master Données et Systèmes Connectés </span> </a>
+                      </span></span> <span>&bull;</span> <em class="date">2016-2018</em></p>
 
-                  <p>
+                  <p property="sc:description">
                       Parcours formant des spécialistes capables de répondre aux problématiques de massification des données et
                        d'interconnexion des systèmes informatiques et objets communicants liés à la métamorphose numérique actuelle 
                        (web, Internet des objets, big data) en maîtrisant la chaîne de traitement allant de la donnée brute à son analyse,
                         ainsi que son exploitation dans des systèmes intelligents interconnectés.
                   
                   </p>
+                    </span>
 
                </div>
             </div> <!-- item end -->
 
-            <div class="row item">
+            <div class="row item" typeof="sc:CollegeOrUniversity">
 
                <div class="twelve columns">
 
-                  <h3><span>
-                      <a href="http://www.univh2c.ma/">Université Hassan II Aïn Chock de Casablanca </a>
+                  <h3><span property="sc:name">
+                      <a property="sc:url" href="http://www.univh2c.ma/">Université Hassan II Aïn Chock de <span property="sc:addressLocality">Casablanca </span> </a>
                       </span></h3>
-                  <p class="info"><span>
-                      <a href="http://www.fstm.ac.ma/dphysique.html">Licence Sciences et Techniques Sciences physiques pour l'ingénieur </a>
+                    <span property="sc:subOrganization" typeof="Organization">
+                  <p class="info"><span >
+                      <a property="sc:url" href="http://www.fstm.ac.ma/dphysique.html"> <span property="sc:name"> Licence Sciences et Techniques Sciences physiques pour l'ingénieur </span></a>
                       </span> <span>&bull;</span> <em class="date">2012-2015</em></p>
 
-                  <p>
+                  <p  property="sc:description">
                   L’objectif de cette filière est de doter les étudiants d’une formation technique rapidement opérationnelle tout en leur assurant
                    une culture générale dans le domaine des sciences et techniques qui leur permettraient facilement de s’orienter vers les métiers
                     de l’ingénieur. Elle vise d’assurer en plus d’une bonne formation de base en physique, de solides compétences en informatique
@@ -186,18 +203,19 @@
 
             </div> <!-- item end -->
 
-            <div class="row item">
+            <div class="row item" typeof="sc:CollegeOrUniversity">
 
                <div class="twelve columns">
 
-                  <h3><span>
-                      <a href="http://www.univh2c.ma/">Université Hassan II Aïn Chock de Casablanca </a>
+                  <h3><span property="sc:name">
+                      <a property="sc:url" href="http://www.univh2c.ma/">Université Hassan II Aïn Chock de <span property="sc:addressLocality">Casablanca </span> </a>
                       </span></h3>
-                  <p class="info"><span>
-                      <a href="http://www.est-uh2c.ac.ma/Modules/tc.pdf">DUT Techniques de Commercialisation</a>
+                    <span property="sc:subOrganization" typeof="Organization">
+                  <p class="info"><span >
+                      <a property="sc:url" href="http://www.est-uh2c.ac.ma/Modules/tc.pdf"><span property="sc:name">DUT Techniques de Commercialisation </span></a>
                       </span><span>&bull;</span> <em class="date">2011-2012</em></p>
 
-                  <p>
+                  <p property="sc:description">
                   L’objectif de cette filière est prendre connaissance de l’environnement économique et commercial de l’entreprise et maîtriser les outils
                    et techniques de prise de décision dans les différents domaines du management commercial et marketing. 
                   </p>
@@ -222,14 +240,15 @@
 
          <div class="nine columns main-col">
 
-            <div class="row item">
+            <div class="row item" typeof="sc:Organization">
 
                <div class="twelve columns">
 
-                  <h3>HOLIMEET, Lyon, France</h3>
-                  <p class="info">Stage développeur web <span>&bull;</span> <em class="date">Avril 2017 - Août 2017</em></p>
+                  <h3><span property="sc:name">HOLIMEET </span>, <span property="sc:addressLocality">Lyon</span>, <span property="sc:addressCountry">France</span></h3>
+                    <span property="sc:subOrganization" typeof="JobPosting">
+                  <p class="info"><span property="sc:employmentType"> Stage</span> <span property="sc:jobTitle">développeur web</span> <span>&bull;</span> <em class="date"><span property="sc:startDate">Avril 2017</span> - <span property="sc:endDate">Août 2017</span></em></p>
 
-                  <p>
+                  <p property="sc:description">
                   Conception et réalisation de l'application GLADYS pour la prise de rendez-vous entre professionnels.
                   </p>
 
@@ -237,14 +256,15 @@
 
             </div> <!-- item end -->
 
-            <div class="row item">
+            <div class="row item" typeof="sc:Organization">
 
                <div class="twelve columns">
 
-                  <h3> Compagnie des Boissons Marocaines et Internationales COBOMI, Nouacer, Maroc </h3>
-                  <p class="info">Ingénieur stagiaire <span>&bull;</span> <em class="date">Janvier 2016 - Avril 2016</em></p>
+                  <h3> <span property="sc:name">Compagnie des Boissons Marocaines et Internationales COBOMI</span>, <span property="sc:addressLocality">Nouacer</span>, <span property="sc:addressCountry">Maroc</span> </h3>
+                  <span property="sc:subOrganization" typeof="JobPosting">
+                  <p class="info"><span property="sc:jobTitle">Ingénieur <span property="sc:employmentType">stagiaire</span></span> <span>&bull;</span> <em class="date"><span property="sc:startDate">Janvier 2016 -</span> - <span property="sc:endDate"> Avril 2016</span></em></p>
 
-                  <p>
+                  <p property="sc:description">
                   Amélioration du ratio d’eau au sein de l’usine pour passer de 2,2 à 1,93 : <br>
                     - La supervision de la consommation d’eau dans toute l’usine par l’établissement d'une cartographie du circuit d'eau puis
                     la détermination des points critiques qu'il faut superviser et à la fin l’établissement d'un cahier des charges pour la mise en place des compteurs d'eau. </br>
@@ -254,14 +274,15 @@
                </div>
 
             </div> <!-- item end -->
-            <div class="row item">
+            <div class="row item" typeof="sc:Organization">
 
                <div class="twelve columns">
 
-                  <h3>Société Générale Maroc, Casablanca</h3>
-                  <p class="info">Assistant ingénieur réseaux <span>&bull;</span> <em class="date">Avril 2015 - juin 2015</em></p>
+                  <h3><span property="sc:name">Société Générale <span property="sc:addressCountry">Maroc </span></span>, <span property="sc:addressLocality">Casablanca</span></h3>
+                  <span property="sc:subOrganization" typeof="JobPosting">
+                  <p class="info"><span property="sc:employmentType">Stage</span> <span property="sc:jobTitle">Assistant ingénieur réseaux </span><span>&bull;</span> <em class="date"><span property="sc:startDate">Avril 2015 - </span> - <span property="sc:endDate">juin 2015</span></em></p>
 
-                  <p>
+                  <p property="sc:description">
                   Etude sur le fonctionnement des protocoles DHCP et DNS
                   </p>
 
@@ -276,17 +297,17 @@
 
       <!-- Skills
       ----------------------------------------------- -->
-      <div class="row skill">
+      <div resource="#gazouzi" class="row skill">
 
          <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span >Skills</span></h1>
          </div>
 
          <div class="nine columns main-col">
 
 				<div class="bars">
 
-				   <ul class="skills">
+				   <ul class="skills" property="sc:skills">
 					   <li><span class="bar-expand photoshop"></span><em>Java</em></li>
                   <li><span class="bar-expand illustrator"></span><em>Spring</em></li>
 						<li><span class="bar-expand wordpress"></span><em>Python</em></li>
@@ -300,7 +321,7 @@
 			</div> <!-- main-col end -->
 
       </div> <!-- End skills -->
-      <div class="row work">
+      <div resource="#gazouzi" class="row work">
             
                      <div class="three columns header-col">
                         <h1><span>Hobbies</span></h1>
@@ -378,7 +399,9 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-
+</div>
+</div>
+</div>
 </body>
 
 </html>
