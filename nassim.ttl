@@ -1,34 +1,42 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix og: <http://ogp.me/ns#> .
 @prefix rdfa: <http://www.w3.org/ns/rdfa#> .
 @prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-_:1 
-   rdf:type <https://websemantic.herokuapp.com/Person>;
-   <https://websemantic.herokuapp.com/url> "https://websemantic.herokuapp.com/nassim.html"@en;
-   <https://websemantic.herokuapp.com/type> "Person"@en;
-   <https://websemantic.herokuapp.com/title> "Nassim TOUATI"@en;
-   <https://websemantic.herokuapp.com/description> "Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne."@en .
 <https://rdfa.info/play/>
+   og:description "Je suis un étudiant en master 2 Données et Systèmes Connectées á l´université Jean Monnet de Saint-Etienne."@en;
+   og:type "Person"@en;
+   og:url "https://websemantic.herokuapp.com/nassim.html"@en;
+   og:image "https://websemantic.herokuapp.com/images/nassim.png"@en;
    rdfa:usesVocabulary schema:;
-   rdfa:usesVocabulary schema: property= .
+   rdfa:usesVocabulary schema: property=;
+   foaf:google+ <https://plus.google.com/103044872363832952335>;
+   foaf:linkedin <https://www.linkedin.com/in/nassim-touati/>;
+   foaf:github <https://github.com/nassimtouati> .
+_:1 
+   rdf:type schema:#Person .
 <https://rdfa.info/play/#contact>
    rdf:type schema:Person;
-   schema:name "Nassim TOUATI"@en;
-   schema:description """Je suis un étudiant en master 2 Données et Systèmes Connectées à l'université Jean Monnet de Saint-Etienne en France, et en master 2 Réseaux et Systèmes Informatiques à l'université de Turin en Italie (Formation à distance). Mes compétences techniques, issues de mes études universitaires, me permettent de réaliser un nombre varié de missions.
-Sérieux, motivé , tels sont mes principaux traits de caractère. Je suis à la recherche d'un stage pour 6 mois, je suis intéressé aux domaines de développement informatiques (Java, Spring Boot, MySQL, WebService, ...) le domaine de Data Mining, le domaine machine learning plus particulièrement les réseaux de neurones.
-                    />
-                    <div class="""@en;
-   schema:address <https://rdfa.info/play/address>;
-   schema:telephone "07 61 24 38 97"@en;
-   schema:email <mailto:nassim.touati@etu.univ-st-etienne.fr> .
+   foaf:google+ <https://plus.google.com/103044872363832952335>;
+   foaf:linkedin <https://www.linkedin.com/in/nassim-touati/>;
+   foaf:github <https://github.com/nassimtouati> .
 _:2 
    rdf:type schema:Person;
-   schema:image <https://websemantic.herokuapp.com/images/nassim.png> .
+   schema:image <https://websemantic.herokuapp.com/images/nassim.png>;
+   schema:description """Je suis un étudiant en master 2 Données et Systèmes Connectées á l´université Jean Monnet de Saint-Etienne en France, et en master 2 Réseaux et Systemes Informatiques á l´université de Turin en Italie (Formation à distance). Mes competénces techniques, issues de mes études universitaires, me permettent de realiser un nombre varié de missions.
+Serieux, motivé , tels sont mes principaux traits de caractère. Je suis á la recherche d´un stage pour 6 mois, je suis interessé aux domaines de développement informatiques (Java, Spring Boot, MySQL, WebService) le domaine de Data Mining, le domaine machine learning plus particulièrement les réseaux de neurones."""@en;
+   schema:name "Nassim TOUATI"@en;
+   schema:url <https://www.google.fr/maps/place/35+Rue+Gabriel+P%25C3%25A9ri,+42100+Saint-%25C3%2589tienne/@45.4120492,4.3853809,17z/data=!3m1!4b1!4m8!1m2!2m1!1s35+A+rue+Gabriel+Peri!3m4!1s0x47f5aed2647432a3:0x4d01cc38e799ea3c!8m2!3d45.4120492!4d4.3875696>;
+   schema:address <https://rdfa.info/play/address> .
 <https://rdfa.info/play/address>
    rdf:type schema:PostalAddress;
+   schema:url <https://www.google.fr/maps/place/35+Rue+Gabriel+P%25C3%25A9ri,+42100+Saint-%25C3%2589tienne/@45.4120492,4.3853809,17z/data=!3m1!4b1!4m8!1m2!2m1!1s35+A+rue+Gabriel+Peri!3m4!1s0x47f5aed2647432a3:0x4d01cc38e799ea3c!8m2!3d45.4120492!4d4.3875696>;
    schema:streetAddress "35 A, rue Gabriel Péri 42100"@en;
    schema:addressLocality "Saint-Etienne"@en;
-   schema:addressRegion "Loire"@en .
+   schema:addressRegion "Loire"@en;
+   schema:telephone "07 61 24 38 97"@en;
+   schema:email <mailto:nassim.touati@etu.univ-st-etienne.fr> .
 _:3 
    rdf:type schema: property=CollegeOrUniversity;
    schema: property=url <https://www.univ-st-etienne.fr>;
@@ -43,7 +51,7 @@ _:4
 _:5 
    rdf:type schema:CollegeOrUniversity;
    schema:url <https://www.unito.it>;
-   schema:name "Turin university (Italy)"@en;
+   schema:name "Université de Turin (Italie)"@en;
    schema:address _:6;
    schema:telephone "+39 011 670 6111"@en .
 _:6 
@@ -65,7 +73,7 @@ _:8
 _:9 
    rdf:type schema:CollegeOrUniversity;
    schema:url <http://www.amideast.org>;
-   schema:name "AMIDEAST Tunisia (Tunisia)"@en;
+   schema:name "AMIDEAST Tunisia (Tunisie)"@en;
    schema:address _:10;
    schema:telephone "+216 71 145 700"@en;
    schema:educationalCredentialAwarded "Test Of English for International Communications"@en .
@@ -82,22 +90,22 @@ _:11
    schema:telephone "+216 75 272 280"@en .
 _:12 
    rdf:type schema:PostalAddress;
-   schema:streetAddress "Rue Jilani Habib, Gabès 6002"@en;
+   schema:streetAddress "Rue Jilani Habib, Gabes 6002"@en;
    schema:addressLocality "Tunisia"@en;
    schema:addressRegion "Gabes, Tunisia"@en .
 _:13 
    rdf:type schema:Person;
    schema:workLocation "Globe informatique"@en;
-   schema:jobTitle "User Support Technician"@en;
+   schema:jobTitle "Technicien support utilisateur"@en;
    schema:adress ""@en .
 _:14 
    rdf:type schema:Person;
    schema:workLocation "SOMEGI"@en;
-   schema:jobTitle "Developer"@en .
+   schema:jobTitle "Developpeur"@en .
 _:15 
    rdf:type schema:Person;
    schema:workLocation "Groupe Chimique Tunisien"@en;
-   schema:jobTitle "Dotnet Developer"@en .
+   schema:jobTitle "Developpeur .Net"@en .
 _:16 
    rdf:type schema:Person;
    schema:skills """
@@ -110,4 +118,6 @@ _:16
                   Web Services.
                   Programming language.
                   Database.
-					"""@en .
+			"""@en .
+_:17 
+   rdf:type schema:Person .
