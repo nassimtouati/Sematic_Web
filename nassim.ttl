@@ -1,8 +1,8 @@
 @prefix og: <http://ogp.me/ns#> .
 @prefix rdfa: <http://www.w3.org/ns/rdfa#> .
 @prefix schema: <http://schema.org/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <https://rdfa.info/play/>
    og:description "Je suis un étudiant en master 2 Données et Systèmes Connectées á l´université Jean Monnet de Saint-Etienne."@en;
@@ -10,12 +10,12 @@
    og:url "https://websemantic.herokuapp.com/nassim.html"@en;
    og:image "https://websemantic.herokuapp.com/images/nassim.png"@en;
    rdfa:usesVocabulary schema:;
-   rdfa:usesVocabulary schema: property=;
+   rdfa:usesVocabulary schema: property= .
+_:1 
+   rdf:type schema:#Person;
    foaf:google+ <https://plus.google.com/103044872363832952335>;
    foaf:linkedin <https://www.linkedin.com/in/nassim-touati/>;
    foaf:github <https://github.com/nassimtouati> .
-_:1 
-   rdf:type schema:#Person .
 <https://rdfa.info/play/#contact>
    rdf:type schema:Person;
    foaf:google+ <https://plus.google.com/103044872363832952335>;
