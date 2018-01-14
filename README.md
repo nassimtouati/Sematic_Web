@@ -2,7 +2,6 @@
 
 <h3>Piste:</h3> Amélioration de site Web.
 
-<h3>Elaboré par:</h3> Nassim TOUATI - Marouane GAZOUZI - Arslen REMACI
 
 <h3> Description du projet:</h3> Le projet est destiné à mettre en oeuvre l'amélioration du référencement des sites web qu'on a pu voir dans la partie théorique du cours. 
 Tout d’abord on a commencé par la création d'un site web qui comprend une page d'accueil et trois autres pages qui correspondent aux pages des membres du groupe.
